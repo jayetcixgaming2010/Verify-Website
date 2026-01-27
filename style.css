@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container { width: 90%; max-width: 480px; text-align: center; }
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+h1 { font-size: 2.8em; margin-bottom: 15px; }
+#desc { margin-bottom: 30px; opacity: 0.95; line-height: 1.5; }
+input {
+  width: 100%;
+  padding: 16px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.4em;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+}
+button {
+  background: #00ff9d;
+  color: #000;
+  font-weight: bold;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover { background: #00cc7a; transform: translateY(-3px); }
+#message {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.success { background: rgba(0, 255, 100, 0.3); }
+.error { background: rgba(255, 0, 0, 0.3); }
+.hidden { display: none; }
+footer { margin-top: 40px; opacity: 0.7; font-size: 0.9em; }

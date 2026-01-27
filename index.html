@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xác Minh Thành Viên Discord</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>🔐 Xác Minh Thành Viên</h1>
+      <p id="desc">Nhập mã verify mà bot đã gửi cho bạn qua DM Discord.</p>
+      
+      <form id="verifyForm">
+        <input type="text" id="code" placeholder="ABC123" maxlength="8" required autocomplete="off" />
+        <button type="submit">Xác Nhận Mã</button>
+      </form>
+
+      <div id="message" class="hidden"></div>
+    </div>
+    <footer>© 2026 Server Discord • Verify System</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
