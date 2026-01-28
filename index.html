@@ -23,5 +23,13 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+   const params = new URLSearchParams(window.location.search);
+   const guild = params.get("guild");
+   if (guild) {
+     document.getElementById("desc").innerText =
+       "Nhập mã verify cho server Discord của bạn.";
+   }
+ </script>
 </body>
 </html>
